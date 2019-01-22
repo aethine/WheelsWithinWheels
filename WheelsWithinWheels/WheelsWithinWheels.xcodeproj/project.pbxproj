@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5CAA606021F7723C00901837 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA605F21F7723C00901837 /* main.swift */; };
+		9CD32EC021F7729300617F54 /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD32EBF21F7729300617F54 /* Customers.swift */; };
+		9CD32EC221F7729A00617F54 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD32EC121F7729A00617F54 /* Orders.swift */; };
+		9CD32EC421F772A600617F54 /* Pricelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD32EC321F772A600617F54 /* Pricelist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		5CAA605C21F7723C00901837 /* WheelsWithinWheels */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WheelsWithinWheels; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAA605F21F7723C00901837 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9CD32EBF21F7729300617F54 /* Customers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
+		9CD32EC121F7729A00617F54 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		9CD32EC321F772A600617F54 /* Pricelist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pricelist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				5CAA605F21F7723C00901837 /* main.swift */,
+				9CD32EBF21F7729300617F54 /* Customers.swift */,
+				9CD32EC121F7729A00617F54 /* Orders.swift */,
+				9CD32EC321F772A600617F54 /* Pricelist.swift */,
 			);
 			path = WheelsWithinWheels;
 			sourceTree = "<group>";
@@ -119,7 +128,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD32EC221F7729A00617F54 /* Orders.swift in Sources */,
+				9CD32EC421F772A600617F54 /* Pricelist.swift in Sources */,
 				5CAA606021F7723C00901837 /* main.swift in Sources */,
+				9CD32EC021F7729300617F54 /* Customers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
