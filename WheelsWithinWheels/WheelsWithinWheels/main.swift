@@ -10,3 +10,8 @@ import Foundation
 
 print("Hello, World!")
 
+print("Welcome!")
+
+repeat {
+    print("")
+} while runMainLoop()

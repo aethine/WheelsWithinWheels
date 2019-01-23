@@ -10,6 +10,11 @@
 		5CAA606021F7723C00901837 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA605F21F7723C00901837 /* main.swift */; };
 		5CFC11C121F8A861001939A6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11C021F8A861001939A6 /* Account.swift */; };
 		5CFC11C321F8A8A9001939A6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11C221F8A8A9001939A6 /* Order.swift */; };
+		5CFC11C521F8E7D6001939A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11C421F8E7D6001939A6 /* MainView.swift */; };
+		5CFC11CE21F8E8DF001939A6 /* AccountsReceivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11CD21F8E8DF001939A6 /* AccountsReceivable.swift */; };
+		5CFC11D021F8E908001939A6 /* ActiveOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11CF21F8E908001939A6 /* ActiveOrders.swift */; };
+		5CFC11D221F8E960001939A6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11D121F8E960001939A6 /* Home.swift */; };
+		5CFC11D421F8E9CF001939A6 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11D321F8E9CF001939A6 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +34,11 @@
 		5CAA605F21F7723C00901837 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5CFC11C021F8A861001939A6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		5CFC11C221F8A8A9001939A6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5CFC11C421F8E7D6001939A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5CFC11CD21F8E8DF001939A6 /* AccountsReceivable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsReceivable.swift; sourceTree = "<group>"; };
+		5CFC11CF21F8E908001939A6 /* ActiveOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveOrders.swift; sourceTree = "<group>"; };
+		5CFC11D121F8E960001939A6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5CFC11D321F8E9CF001939A6 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +71,24 @@
 		5CAA605E21F7723C00901837 /* WheelsWithinWheels */ = {
 			isa = PBXGroup;
 			children = (
+				5CFC11C821F8E8BA001939A6 /* Views */,
 				5CAA605F21F7723C00901837 /* main.swift */,
 				5CFC11C021F8A861001939A6 /* Account.swift */,
 				5CFC11C221F8A8A9001939A6 /* Order.swift */,
+				5CFC11C421F8E7D6001939A6 /* MainView.swift */,
 			);
 			path = WheelsWithinWheels;
+			sourceTree = "<group>";
+		};
+		5CFC11C821F8E8BA001939A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5CFC11CD21F8E8DF001939A6 /* AccountsReceivable.swift */,
+				5CFC11CF21F8E908001939A6 /* ActiveOrders.swift */,
+				5CFC11D121F8E960001939A6 /* Home.swift */,
+				5CFC11D321F8E9CF001939A6 /* AccountView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +148,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CFC11D021F8E908001939A6 /* ActiveOrders.swift in Sources */,
 				5CFC11C321F8A8A9001939A6 /* Order.swift in Sources */,
+				5CFC11C521F8E7D6001939A6 /* MainView.swift in Sources */,
 				5CAA606021F7723C00901837 /* main.swift in Sources */,
+				5CFC11D421F8E9CF001939A6 /* AccountView.swift in Sources */,
 				5CFC11C121F8A861001939A6 /* Account.swift in Sources */,
+				5CFC11CE21F8E8DF001939A6 /* AccountsReceivable.swift in Sources */,
+				5CFC11D221F8E960001939A6 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
