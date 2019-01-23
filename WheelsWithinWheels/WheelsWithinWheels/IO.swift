@@ -15,3 +15,7 @@ func getLine() -> String {
     }
     return res!
 }
+
+func daysFromNow(_ days: Double) -> Date {
+    return Date.init(timeIntervalSinceNow: days * 60 * 60 * 24)
+}

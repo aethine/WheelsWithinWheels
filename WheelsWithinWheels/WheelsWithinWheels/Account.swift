@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Account {
+class Account: CustomStringConvertible {
     let name: String
     var info: String
     var orderList: [Order]
@@ -26,5 +26,9 @@ class Account {
     }
     func addBalance(amt: Double) {
         balance += amt
+    }
+    
+    var description: String {
+        return "{ACCOUNT name: \(name) info: \(info) orderCount: \(orderList.count) balance: $\(balance)"
     }
 }

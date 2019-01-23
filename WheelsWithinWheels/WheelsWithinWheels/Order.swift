@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Order {
+class Order: CustomStringConvertible {
     private static var ids: [String] = []
     
     let under: Account
@@ -47,5 +47,12 @@ class Order {
         if pickedUp != nil {
             pickedUp = Date(timeIntervalSinceNow: 0)
         }
+    }
+    
+    var description: String {
+        let mainStr = "ORDER under: \(under.name) created: \(created) due: \(due) price: \(price) id: \(id) "
+        let completedStr =  "completed: " + (completed?.description ?? "NONE")
+        let pickedUpStr =  " picked up: " + (pickedUp?.description ?? "NONE")
+        return "{" + mainStr + completedStr + pickedUpStr + "}"
     }
 }

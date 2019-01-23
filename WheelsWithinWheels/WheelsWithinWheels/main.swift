@@ -10,8 +10,18 @@ import Foundation
 
 print("Hello, World!")
 
-print("Welcome!")
+//print("Welcome!")
+//
+//repeat {
+//    print("")
+//} while runMainLoop()
 
-repeat {
-    print("")
-} while runMainLoop()
+let a = Account(name: "Alex Smith", info: "(123)-456-7890")
+print(a)
+
+let newOrder = Order(under: a, due: daysFromNow(7.5), price: 100)
+print(newOrder)
+
+a.addOrder(newOrder)
+
+print(a)
