@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C88106D21FA413900242F57 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C88106C21FA413900242F57 /* Accounts.swift */; };
 		5CAA606021F7723C00901837 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA605F21F7723C00901837 /* main.swift */; };
 		5CFC11C121F8A861001939A6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11C021F8A861001939A6 /* Account.swift */; };
 		5CFC11C321F8A8A9001939A6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC11C221F8A8A9001939A6 /* Order.swift */; };
@@ -31,8 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C88106C21FA413900242F57 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		5CAA605C21F7723C00901837 /* WheelsWithinWheels */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WheelsWithinWheels; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CAA605F21F7723C00901837 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5CAA605F21F7723C00901837 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; usesTabs = 0; };
 		5CFC11C021F8A861001939A6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		5CFC11C221F8A8A9001939A6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		5CFC11C421F8E7D6001939A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				5CFC11C221F8A8A9001939A6 /* Order.swift */,
 				5CFC11C421F8E7D6001939A6 /* MainView.swift */,
 				5CFC11D521F8EBA6001939A6 /* IO.swift */,
+				5C88106C21FA413900242F57 /* Accounts.swift */,
 			);
 			path = WheelsWithinWheels;
 			sourceTree = "<group>";
@@ -104,6 +107,7 @@
 				5CAA605821F7723B00901837 /* Sources */,
 				5CAA605921F7723B00901837 /* Frameworks */,
 				5CAA605A21F7723B00901837 /* CopyFiles */,
+				5C88106E21FA41E500242F57 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -146,6 +150,26 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C88106E21FA41E500242F57 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTAGS=\"TODO:|FIXME:\"\nERRORTAG=\"ERROR:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5CAA605821F7723B00901837 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -158,6 +182,7 @@
 				5CAA606021F7723C00901837 /* main.swift in Sources */,
 				5CFC11D421F8E9CF001939A6 /* AccountView.swift in Sources */,
 				5CFC11C121F8A861001939A6 /* Account.swift in Sources */,
+				5C88106D21FA413900242F57 /* Accounts.swift in Sources */,
 				5CFC11CE21F8E8DF001939A6 /* AccountsReceivable.swift in Sources */,
 				5CFC11D221F8E960001939A6 /* Home.swift in Sources */,
 			);

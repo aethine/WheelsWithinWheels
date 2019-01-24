@@ -20,7 +20,7 @@ func runHomeView() -> Bool {
         .trimmingCharacters(in: .whitespacesAndNewlines)
         .lowercased()
     
-    if /* searchForAccount(info: input) */ input == "account" {
+    if let accounts = searchAccounts(forName: input) {
         currentView = .Account
     }
     else if input == "receivable" {

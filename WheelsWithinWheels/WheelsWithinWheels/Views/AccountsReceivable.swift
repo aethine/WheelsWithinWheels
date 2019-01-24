@@ -8,6 +8,7 @@
 
 import Foundation
 
+//TODO: Implement runAccountsReceivableView
 func runAccountsReceivableView() -> Bool {
     return true
 }
